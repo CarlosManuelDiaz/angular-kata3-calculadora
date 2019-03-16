@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-6 text-center">
+      <input type="number" placeholder="Introduce un número" id="val1" [(ngModel)]="val1">
+      <input type="number" placeholder="Introduce un número" id="val2" [(ngModel)]="val2">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-6 text-center">
+      <button type="button" class="btn btn-primary btn-large" (click)="suma()">+</button>
+      <button type="button" class="btn btn-primary btn-large" (click)="resta()">-</button>
+      <button type="button" class="btn btn-primary btn-large" (click)="multiplicacion()">*</button>
+      <button type="button" class="btn btn-primary btn-large" (click)="division()">/</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-6 text-left">
+      <h1>El resultado es: {{resultado}}</h1>
+    </div>
+  </div>
+</div>
